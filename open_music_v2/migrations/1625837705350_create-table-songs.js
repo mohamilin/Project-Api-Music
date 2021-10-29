@@ -1,7 +1,5 @@
 /* eslint-disable camelcase */
 
-exports.shorthands = undefined
-
 /**
  *
  * @param {*} pgm
@@ -25,9 +23,9 @@ exports.up = (pgm) => {
       type: 'TEXT',
       notNull: true,
     },
-  })
-}
+  });
+};
 
 exports.down = (pgm) => {
-  pgm.dropTable('songs')
-}
+  pgm.dropTable('songs');
+};

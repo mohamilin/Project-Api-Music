@@ -1,4 +1,4 @@
-exports.shorthands = undefined
+/* eslint-disable camelcase */
 
 exports.up = (pgm) => {
   pgm.createTable('users', {
@@ -19,9 +19,9 @@ exports.up = (pgm) => {
       type: 'TEXT',
       notNull: true,
     },
-  })
-}
+  });
+};
 
 exports.down = (pgm) => {
-  pgm.dropTable('users')
-}
+  pgm.dropTable('users');
+};
