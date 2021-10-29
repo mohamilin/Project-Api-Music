@@ -9,6 +9,6 @@ const routes = (handler) => [
     path: '/users/{userId}',
     handler: handler.getUserByIdHandler,
   },
-]
+];
 
-module.exports = routes
+module.exports = routes;
