@@ -1,0 +1,25 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": "off",
+        "quotes": ["error", "single"],
+        "camelcase": "off",
+        "no-console": "off",
+        "no-underscore-dangle": "off",
+        "no-shadow": "off",
+        "import/no-unresolved": [
+          2,
+          { "caseSensitive": false }
+        ]
+      }
+}
