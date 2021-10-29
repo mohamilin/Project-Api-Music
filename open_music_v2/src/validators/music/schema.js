@@ -1,7 +1,7 @@
-const Joi = require('joi')
+const Joi = require('joi');
 
 /**
- * 
+ *
 title : string, required.
 year : number, required.
 performer : string, required.
@@ -14,6 +14,6 @@ const musicPayloadSchema = Joi.object({
   performer: Joi.string().required(),
   genre: Joi.string(),
   duration: Joi.number(),
-})
+});
 
-module.exports = { musicPayloadSchema }
+module.exports = { musicPayloadSchema };
